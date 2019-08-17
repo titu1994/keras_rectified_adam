@@ -6,7 +6,7 @@ Keras port of [Rectified Adam](https://github.com/LiyuanLucasLiu/RAdam), from th
 
 <img src="https://github.com/titu1994/keras_rectified_adam/blob/master/images/rectified_adam.png?raw=true" height=100% width=100%>
 
-One of the many contributions of this paper is the idea that Adam with Warmup tends to perform better than Adam without warmup. However, when Adam is used without warmup, during the initial iterations the gradients have large variance. This large variance causes overshoots of minima, and thereby leads to poor optima. 
+Above image is from the paper. One of the many contributions of this paper is the idea that Adam with Warmup tends to perform better than Adam without warmup. However, when Adam is used without warmup, during the initial iterations the gradients have large variance. This large variance causes overshoots of minima, and thereby leads to poor optima. 
 
 Warmup on the other hand is the idea of training with a very low learning rate for the first few epochs to offset this large variance. However, the degree of warmup - how long and what learning rate should be used require extensive hyper parameter search, which is usually costly. 
 
